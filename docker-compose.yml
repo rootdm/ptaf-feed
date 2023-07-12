@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  ptaf-feed1:
+    image: 'rootdm/ptaf-feed:latest'    
+    restart: unless-stopped
+    container_name: ptaf-feed1
+    volumes:
+      - ./conf:/app/conf
+
